@@ -160,7 +160,7 @@ class OllamaChat(Base):
 
 class XinferenceChat(Base):
     def __init__(self, key=None, model_name="", base_url=""):
-        self.client = OpenAI(api_key="xxx", base_url=base_url)
+        self.client = OpenAI(api_key="EMPTY", base_url=base_url)
         self.model_name = model_name
 
     def chat(self, system, history, gen_conf):
